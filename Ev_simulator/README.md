@@ -1,25 +1,17 @@
-# 5G vRAN Controller model based on Quasi-Birth-Death (QBD) process
-
-This repository contains a model implementation of the flexible functional split controller for 5G vRAN architectures.
-
-The repository is split into an event driven simulator and an implementation of the theoretical model (to be added). 
-
-*More detailed information will be added soon*
-
-## Event-driven simulator
+# Event-driven simulator
 
 The simulator is implemented in `C++` and called from a `Python` script, although it can be directly executed from command line.
 
 It has been only tested in `Ubuntu 20.04` with `C++17` standard enabled.
 
-### Compilation and execution
+## Compilation and execution
 ```
 make
 ```
 ```
 ./bin/main BUFFER_ENGINE_4 <NUM_PKTS> <SERV_DIST> <BUFF_SIZE> <SPLIT_PROBS> <SERV_TIME> <ARR_RATE> <GAMMA> <RES_HEAD> <RES_TAIL> <ITERS> <PKT_LOGS> <PROB_STATS> <PL_TT> <AVG_TIMES> <AVG_PL_TT>
 ```
-#### Execution parameters description:
+### Execution parameters description:
   + `NUM_PKTS`: number of packets
   + `SERV_DIST`: type of service time so far `CONST` (constant) or `EXP` (exponentially distributed)
   + `BUFF_SIZE`: buffer size in number of packets
@@ -39,7 +31,7 @@ make
 
 Examples of use can be found in the file `runAll.py`.
 
-### Results format:
+## Results format:
   + `PKT_LOGS`: `1` file per iteration. 
     + File name (`curr_iter` is the current iteration index): `<RES_HEAD>pktsLog_<ARR_RATE>_<BUFF_SIZE>_<curr_iter><RES_TAIL>`
     + Row format:
@@ -71,10 +63,7 @@ Examples of use can be found in the file `runAll.py`.
       Avg. Total Time | Avg. loss probability
       ```
 
-## Model implementation
-*Matlab theoretical model implementation coming soon!!*
-
-## Contact
+# Contact
 Luis Diez;  [email](mailto:ldiez@tlmat.unican.es). [University of Cantabria](https://web.unican.es/), [Communications Engineering Department](https://www.tlmat.unican.es/).
 
 Ramón Agüero; [email](mailto:ramon@tlmat.unican.es). [University of Cantabria](https://web.unican.es/), [Communications Engineering Department](https://www.tlmat.unican.es/).
