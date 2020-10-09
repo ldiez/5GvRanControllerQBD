@@ -2,7 +2,7 @@
 
 It consists of a set of Matlab scrips and functions. The code is mostly self-explanatory. Anyway, below we comment the functionality of each script (functions used by the scripts are not commented.)
 
-## ploss_bounded_controller.m
+## [ploss_bounded_controller](./ploss_bounded_controller.m)
 
 Script to obtain the loss probability for the bounded model. 
 It uses various split configurations (alpha and mu)
