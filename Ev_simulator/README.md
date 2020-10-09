@@ -29,7 +29,7 @@ make
     + `AVG_TIMES`: `1` to generate average packet times in each generation, `0` otherwise
     + `AVG_PL_TT`: `1` to generate average loss probability and total in each generation, `0` otherwise
 
-Examples of use can be found in the file `runAll.py`.
+Examples of use can be found in the file [runAll.py](./runAll.py).
 
 ## Results format:
   + `PKT_LOGS`: `1` file per iteration. 
