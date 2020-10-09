@@ -10,7 +10,7 @@ The repository is split into an event driven simulator and an implementation of 
 
 The theoretical model is implemented in Matlab. The Matlab code solves the underlying Markov Chain (QBD process).
 
-The Matlab code can be found in the folder [QBD_model](./QBD_mdel)
+The Matlab code can be found in the folder [QBD_model](./QBD_model)
 
 
 ## Event-driven simulator
